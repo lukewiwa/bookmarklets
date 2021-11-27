@@ -1,4 +1,4 @@
-if (location.host !== "https://app.slack.com/") {
+if (location.host !== "app.slack.com") {
   throw new Error("not slack");
 }
 
