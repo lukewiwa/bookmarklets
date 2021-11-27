@@ -1,5 +1,5 @@
-if (location.host !== "www.realestate.com.au") {
-  throw new Error("not slack");
+if (!location.host.includes("realestate.com.au")) {
+  throw new Error("not real estate dot com");
 }
 
 // Red out listings asking to contact agent
