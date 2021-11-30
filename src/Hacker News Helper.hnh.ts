@@ -28,7 +28,7 @@ for (const subtext of subtexts as HTMLCollectionOf<HTMLTableCellElement>) {
   const links: NodeListOf<HTMLAnchorElement> =
     subtext.querySelectorAll("a:last-child");
   links.forEach((link) => {
-    if (link.text.includes("comments")) {
+    if (link.text.includes("comment")) {
       const div = wrapWithDiv(link);
       div.style.fontSize = "10pt";
       link.style.color = "red";
