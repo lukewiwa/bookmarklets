@@ -3,8 +3,9 @@ document.write(
 );
 const key = "personalNotes";
 const body = document.querySelector("body") as HTMLBodyElement;
-if (localStorage.getItem(key) !== null) {
-  localStorage.setItem(key, body.innerHTML);
+const notes = localStorage.getItem(key);
+if (notes !== null) {
+  body.innerHTML = notes;
 }
 body.oninput = () => {
   localStorage.setItem(key, body.innerHTML);
